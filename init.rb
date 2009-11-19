@@ -18,7 +18,8 @@ Dispatcher.to_prepare do
   end
 
   #This file loads some associations into the core redmine classes, like associations to todos.
-    require 'patch_redmine_classes'
+  require 'patch_redmine_classes'
+  
   require 'todo_issues_controller_patch'
 
   # Add module to Project.
@@ -34,7 +35,7 @@ Redmine::Plugin.register :redmine_todos_plugin do
   name 'Redmine Todo Lists plugin'
   author 'David Lyons'
   description 'A plugin to create and manage agile-esque todo lists on a per project basis.'
-  version '0.0.3.8'
+  version '0.0.3.8.1'
   
 
   settings :default => {

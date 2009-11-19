@@ -7,6 +7,9 @@ Currently has translations for Chinese, Spanish, Italian, French, German, Korean
 
 Please check the issues page(thanks Mischa!) for current known bugs.
 
+== Release 0.0.3.8.1
+* Bugs fix
+
 == Release 0.0.3.8
 * Issue page integration (Adding todos directly in the Issue page)
 * You can edit the text of a todo
