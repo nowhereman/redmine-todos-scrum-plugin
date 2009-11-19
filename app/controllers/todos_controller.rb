@@ -66,7 +66,7 @@ class TodosController < ApplicationController
   def new
     @todo = Todo.new
     @todo.parent_id = Todo.for_project(@project.id).find(params[:parent_id]).id
-    @todo.issue_id = Issue.find(params[:issue_id]).id
+    @todo.issue_id = Issue.find(params[:issue_id]).id if params[:issue_id]
     @todo.project = @project
     @todo.assigned_to = User.current
     render :partial => 'new_todo', :locals => { :todo => @todo}
